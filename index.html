@@ -16,6 +16,7 @@
             align-items: center;
             color: white;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            font-family: Verdana, Geneva, 'Tahoma', sans-serif;
         }
         .feature-box {
             padding: 2rem;
@@ -66,16 +67,17 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="inicio">
-        <div class="grid-container">
+    <section class="hero-section" id="inicio" style="position: relative; background: url('img/featured34-2.jpg') center/cover no-repeat;">
+        <div class="grid-container" style="position: relative; z-index: 2;">
             <div class="grid-x align-middle">
-                <div class="cell medium-8">
-                    <h1>Bienvenido a nuestro sitio web</h1>
+                <div class="cell large-12 text-center">
+                    <h1 class="text-center" style="font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;">Bienvenido a nuestro sitio web</h1>
                     <p class="lead">Ofrecemos soluciones innovadoras para tus necesidades.</p>
                     <a href="#contacto" class="button large">Contáctanos</a>
                 </div>
             </div>
         </div>
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); z-index:1;"></div>
     </section>
 
     <!-- Servicios -->
@@ -88,24 +90,30 @@
         </div>
         <div class="grid-x grid-margin-x medium-up-3">
             <div class="cell">
-                <div class="feature-box">
-                    <i class="fi-lightbulb"></i>
-                    <h4>Consultoría</h4>
-                    <p>Te ayudamos a identificar oportunidades y desarrollar estrategias efectivas.</p>
+                <div class="card feature-box">
+                    <div class="card-section">
+                        <i class="fi-lightbulb"></i>
+                        <h4>Consultoría</h4>
+                        <p>Te ayudamos a desarrollar estrategias efectivas.</p>
+                    </div>
                 </div>
             </div>
             <div class="cell">
-                <div class="feature-box">
-                    <i class="fi-web"></i>
-                    <h4>Desarrollo Web</h4>
-                    <p>Creamos sitios web modernos, responsivos y optimizados.</p>
+                <div class="card feature-box">
+                    <div class="card-section">
+                        <i class="fi-lightbulb"></i>
+                        <h4>Desarrollo Web</h4>
+                        <p>Creamos sitios web modernos, responsivos y optimizados.</p>
+                    </div>
                 </div>
             </div>
             <div class="cell">
-                <div class="feature-box">
-                    <i class="fi-graph-trend"></i>
-                    <h4>Marketing Digital</h4>
-                    <p>Impulsamos tu presencia online con estrategias de marketing efectivas.</p>
+                <div class="card feature-box">
+                    <div class="card-section">
+                        <i class="fi-lightbulb"></i>
+                        <h4>Marketing Digital</h4>
+                        <p>Impulsamos tu presencia online con estrategias de marketing efectivas.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,11 +175,11 @@
                 <div class="grid-x grid-margin-x" style="margin-top: 1rem;">
                     <div class="cell small-6">
                         <h5>Dirección</h5>
-                        <p>123 Calle Principal<br>Ciudad, País</p>
+                        <p>123 Calle Principal<br>Sololá, Guatemala</p>
                     </div>
                     <div class="cell small-6">
                         <h5>Contacto</h5>
-                        <p>Tel: +1 234 567 890<br>Email: info@misitio.com</p>
+                        <p>Tel: +502 57879847<br>Email: info@misitio.com</p>
                     </div>
                 </div>
             </div>
@@ -197,7 +205,7 @@
             </div>
             <div class="grid-x">
                 <div class="cell text-center" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #555;">
-                    <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>

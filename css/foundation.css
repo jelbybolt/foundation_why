@@ -25,6 +25,8 @@ body {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  align-content: center;
 }
 
 hr {
@@ -228,7 +230,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Verdana, Geneva, "Tahoma", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
