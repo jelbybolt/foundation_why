@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio con Foundation</title>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <!-- Foundation Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
+    <style>
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .feature-box {
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .feature-box i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1779ba;
+        }
+        .testimonial {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-menu"></button>
+        <div class="title-bar-title">Mi Sitio</div>
+    </div>
+
+    <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Mi Sitio Web</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="grid-container">
+            <div class="grid-x align-middle">
+                <div class="cell medium-8">
+                    <h1>Bienvenido a nuestro sitio web</h1>
+                    <p class="lead">Ofrecemos soluciones innovadoras para tus necesidades.</p>
+                    <a href="#contacto" class="button large">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="grid-container" style="padding: 4rem 0;">
+        <div class="grid-x grid-margin-x">
+            <div class="cell text-center">
+                <h2>Nuestros Servicios</h2>
+                <p class="lead">Descubre todo lo que podemos hacer por ti</p>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x medium-up-3">
+            <div class="cell">
+                <div class="feature-box">
+                    <i class="fi-lightbulb"></i>
+                    <h4>Consultoría</h4>
+                    <p>Te ayudamos a identificar oportunidades y desarrollar estrategias efectivas.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="feature-box">
+                    <i class="fi-web"></i>
+                    <h4>Desarrollo Web</h4>
+                    <p>Creamos sitios web modernos, responsivos y optimizados.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="feature-box">
+                    <i class="fi-graph-trend"></i>
+                    <h4>Marketing Digital</h4>
+                    <p>Impulsamos tu presencia online con estrategias de marketing efectivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section style="background: #f8f8f8; padding: 4rem 0;">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell text-center">
+                    <h2>Lo que dicen nuestros clientes</h2>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x medium-up-2">
+                <div class="cell">
+                    <div class="testimonial">
+                        <p>"Excelente servicio y profesionalismo. Superaron todas nuestras expectativas."</p>
+                        <cite>María González, CEO de Empresa XYZ</cite>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="testimonial">
+                        <p>"El equipo fue increíblemente receptivo y entregó el proyecto antes de lo esperado."</p>
+                        <cite>Carlos Rodríguez, Director de Marketing</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="grid-container" style="padding: 4rem 0;">
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.</p>
+                <form>
+                    <label>
+                        Nombre
+                        <input type="text" placeholder="Tu nombre">
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="tu@email.com">
+                    </label>
+                    <label>
+                        Mensaje
+                        <textarea placeholder="Tu mensaje" rows="5"></textarea>
+                    </label>
+                    <button type="submit" class="button">Enviar mensaje</button>
+                </form>
+            </div>
+            <div class="cell medium-6">
+                <h2>Nuestra ubicación</h2>
+                <div class="responsive-embed">
+                    <!-- Mapa de ejemplo -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.99834568458935!3d40.74003787932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3b30bcc97%3A0xfcab7c6d31d9e0e8!2sFlatiron%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="grid-x grid-margin-x" style="margin-top: 1rem;">
+                    <div class="cell small-6">
+                        <h5>Dirección</h5>
+                        <p>123 Calle Principal<br>Ciudad, País</p>
+                    </div>
+                    <div class="cell small-6">
+                        <h5>Contacto</h5>
+                        <p>Tel: +1 234 567 890<br>Email: info@misitio.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                    <h5>Mi Sitio Web</h5>
+                    <p>Soluciones innovadoras para tus necesidades digitales.</p>
+                </div>
+                <div class="cell medium-6">
+                    <ul class="menu align-right">
+                        <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="fi-social-instagram"></i></a></li>
+                        <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell text-center" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #555;">
+                    <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Foundation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
