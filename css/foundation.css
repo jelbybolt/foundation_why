@@ -278,6 +278,7 @@ button {
   background: transparent;
   line-height: 1;
   cursor: auto;
+  color: #ffae00;
 }
 [data-whatinput=mouse] button {
   outline: 0;
